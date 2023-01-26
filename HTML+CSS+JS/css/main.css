@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
 
 }
 
@@ -12,6 +15,8 @@
         height: 100vh;
         display: block;
         background-image: url('../images/backgrund.jpg');
+        background-repeat: no-repeat;
+        background-color: #7E3F23;
         border: 30px solid #000;
     }
 
@@ -48,8 +53,45 @@
 
     }
 
-    .db-btn-contact:hover {
-        background-position-y: -45px;
+    .db-contatct-info {
+        width: 300px;
+        height: 180px;
+        padding: 30px;
+        position: fixed;
+        bottom: 45px;
+        right: 45px;
+        z-index: 200;
+        border-radius: 15%;
+        background-color: #000;
+        display: none;
+    }
+
+    .db-contatct-info p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .db-social-links {
+        width: 100%;
+        height: 45px;
+        display: block;
+        margin-top: 7px;
+    }
+
+    .db-social {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+
+    }
+
+    .db-social > img {
+        width: 24px;
+        height: auto;
+        display: block;
+        margin: 12px auto 0;
+
+
     }
 
 
@@ -128,6 +170,11 @@
 
 /* Classes Utilitarias */
 
+.db-title {
+    font-family: 'Abril Fatface', serif;
+    font-weight: normal;
+}
+
 .db-text-brown {
     color: #7E3F23;
 }
@@ -146,20 +193,30 @@
     color: #000;
 }
 
-.db-backgrund-brown {
+.db-bg-brown {
     color: #7E3F23;
 }
 
 
-.db-backgrund-dark {
+.db-bg-dark {
     color: #4d4d4d;
 }
 
 
-.db-backgrund-jight {
+.db-bg-jight {
     color: #bcbcbc;
 }
 
-.db-backgrund-black {
+.db-bg-black {
     color: #000;
+}
+
+/* Classes de Comportamento */
+
+.db-is-open {
+    display: block;
+}
+
+.db-change-icon {
+    background-position-y: -45px;
 }
