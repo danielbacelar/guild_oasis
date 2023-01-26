@@ -15,6 +15,31 @@
         border: 30px solid #000;
     }
 
+    .db-topbar {
+        width: 100px;
+        height: 100px;
+        display: block;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .db-logo img {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-left: 60px;
+        border-radius: 0 0 25px 25px;
+        text-align: center;
+    }
+
+    .db-menu {
+        display: none;
+    }
+
+
+
 }
 
 @media screen and (min-width: 576px){
@@ -26,6 +51,51 @@
 }
 
 @media screen and (min-width: 992px){
+
+    .db-menu {
+        display: table;
+        float: left;
+        height: 10px;
+        margin-left: 180px;
+
+    }
+
+    .db-menu a {
+        font-family: 'Open Sans';
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: lowercase;
+        display: inline-block;
+        margin: 50px 20px 0 20px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .db-menu a:first-child {
+        margin-left: 0;
+    }
+
+    .db-menu a:hover {
+        color: #7E3F23;
+    }
+
+    .db-menu a:before {
+        content: '';
+        width: 0%;
+        height: 4px;
+        background-color: #7E3F23;
+        display: block;
+        position: absolute;
+        bottom: -5;
+        left: 0;
+        transition: all 0.2s ease-out;
+    }
+
+    .db-menu a:hover:before {
+        width: 100%;
+    }
+
 
 }
 
