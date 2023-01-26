@@ -36,13 +36,20 @@
         width: 45px;
         height: 45px;
         display: block;
-        background-color: #000 url('../images/icons8-excluir-480.png');
+        background-color: #7E3F23;
+        background-image: url('../images/icon-contact-close.svg');
+        background-repeat: no-repeat;
         position: fixed;
         bottom: 45px;
         right: 45px;
         border-radius: 50%;
         z-index: 200;
+        transition: all 0.2 ease-out;
 
+    }
+
+    .db-btn-contact:hover {
+        background-position-y: -45px;
     }
 
 
@@ -119,3 +126,40 @@
 
 }
 
+/* Classes Utilitarias */
+
+.db-text-brown {
+    color: #7E3F23;
+}
+
+
+.db-text-dark {
+    color: #4d4d4d;
+}
+
+
+.db-text-jight {
+    color: #bcbcbc;
+}
+
+.db-text-black {
+    color: #000;
+}
+
+.db-backgrund-brown {
+    color: #7E3F23;
+}
+
+
+.db-backgrund-dark {
+    color: #4d4d4d;
+}
+
+
+.db-backgrund-jight {
+    color: #bcbcbc;
+}
+
+.db-backgrund-black {
+    color: #000;
+}
