@@ -1,5 +1,6 @@
 //Declarando variáveis
 var btnContact = document.querySelector('.db-btn-contact');
+var toggleModal = document.querySelectorAll('.db-toggle-modal');
 
 //Page preloader
 
@@ -19,3 +20,16 @@ btnContact.addEventListener('click', function () {
     this.classList.toggle('db-change-icon');
 });
 
+// Abrindo e fechando o modal orçamento
+
+for(var i = 0; i < toggleModal.length; i++) {
+    toggleModal[i].addEventListener('click', function () {
+        var overlay = document.querySelector('.db-overlay');
+        var modalOrcamento = document.querySelector('#db-modal-orcamento');
+
+        overlay.classList.toggle('db-is-open');
+        modalOrcamento.classList.toggle('db-is-open');
+        modalOrcamento.classList.toggle('db-slide-top-in');
+    });
+
+}
