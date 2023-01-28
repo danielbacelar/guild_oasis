@@ -206,7 +206,7 @@ p, label {
 
     .db-contatct-info {
         width: 300px;
-        height: 180px;
+        height: 200px;
         padding: 30px;
         position: fixed;
         bottom: 45px;
@@ -218,7 +218,7 @@ p, label {
     }
 
     .db-contatct-info p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px;
     }
 
@@ -300,6 +300,102 @@ p, label {
         transform-origin: top center;
     }
 
+
+    .db-portifolio-navigator {
+        width: 150px;
+        height: 400px;
+        display: table;
+        position: absolute;
+        left: 90px;
+        top: 28vh;
+    }
+
+    .db-navigator-counter {
+        width: 100%;
+        right: 90px;
+        display: block;
+        margin-bottom: 60px;
+        position: relative;
+    }
+    
+    .db-navigator-counter:before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 100%;
+        background-color: #7E3F23;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+
+    .db-navigator-counter span {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 120px;
+        font-weight: 600;
+        line-height: 90px;
+    }
+
+    .db-item-navigator {
+        width: 100%;
+        display: table;
+    }
+
+    .db-item-navigator a {
+        width: 20px;
+        height: 1px;
+        display: block;
+        margin-bottom: 80px;
+        background-color: #000;
+        margin-left: -55px;
+    }
+
+    .db-item-navigator a.db-item-active {
+        width: 85px;
+        background-color: #212121;
+    }
+
+
+    .db-item-navigator a:last-child {
+        margin-bottom: 30px;
+    }
+
+    .db-itens-next-prev {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -90px;
+        background-color: #000;
+        border-radius: 23px;
+    }
+
+    .db-itens-next-prev > div {
+        height: 25px;
+    }
+
+    .db-itens-couter {
+        font-family: 'Open sans', sans-serif;
+        color: #212121;
+        line-height: 25px;
+    }
+
+    .db-item-prev, .db-item-next {
+        width: 45px;
+        color: #7E3F23;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .db-itens-couter span:nth-child(1) {
+        color: #7E3F23;
+    }
+
+    ion-icon {
+        font-size: 26px;
+    }
 
 }
 
@@ -531,10 +627,15 @@ p, label {
 
 .db-full-height {
     height: 100vh;
+    position: relative;
 }
 
 .db-fisrst-section {
     height: calc(100vh - 30px);
+}
+
+.db-no-padding {
+    padding: 0 !important;
 }
 
 /* Classes de Comportamento */
@@ -553,4 +654,14 @@ p, label {
 
 .db-fade-out {
     animation: fadeOut 2s forwards ease-out;
+}
+
+.db-no-radius-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.db-no-radius-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
