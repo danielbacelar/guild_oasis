@@ -344,7 +344,7 @@ p, label {
 
     .db-item-navigator a {
         width: 20px;
-        height: 1px;
+        height: 2px;
         display: block;
         margin-bottom: 80px;
         background-color: #000;
@@ -352,7 +352,7 @@ p, label {
     }
 
     .db-item-navigator a.db-item-active {
-        width: 85px;
+
         background-color: #212121;
     }
 
@@ -395,6 +395,26 @@ p, label {
 
     ion-icon {
         font-size: 26px;
+    }
+
+    .db-slider-container {
+        background-color: white;
+        display: block;
+        overflow: hidden;
+    }
+
+    .db-slider-list {
+        width: auto;
+        height: 700px;
+        display: block;
+        background-color: aqua;
+        list-style: none;
+    }
+
+    .db-slider-item {
+        display: block;
+        float: left;
+        height: 500px;
     }
 
 }
@@ -664,4 +684,28 @@ p, label {
 .db-no-radius-right {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+.red {
+    background-color: red;
+}
+
+
+.purple {
+    background-color: purple;
+}
+
+
+.blue {
+    background-color: blue;
+}
+
+
+.yellow {
+    background-color: yellow;
+}
+
+
+.green {
+    background-color: green;
 }

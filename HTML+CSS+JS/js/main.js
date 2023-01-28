@@ -42,4 +42,5 @@ var waypoint = new Waypoint({
       myScrolldown.classList.toggle('db-fade-out');
     },
     offset: '75%'
-  })
+});
+
