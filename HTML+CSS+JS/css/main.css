@@ -105,6 +105,14 @@ p, label {
         border: 30px solid #000;
     }
 
+    .db-page-wrapperr {
+        width: 100%;
+        height: 100vh;
+        display: table;
+        background-color: #7E3F23;
+        border: 30px solid #000;
+    }
+
     .db-preloader {
         display: flex;
         flex-direction: row;
@@ -124,6 +132,7 @@ p, label {
 
     .db-topbar {
         position: fixed;
+        z-index: 900;
     }
 
     .db-overlay {
@@ -430,14 +439,18 @@ p, label {
         list-style: none;
     }
 
-    .db-slider-item {
+    .db-slider-list .db-slider-item {
         display: block;
         float: left;
         height: 500px;
         margin-top: calc(26vh - 75px);
     }
 
-    .db-portfolio-item-info {
+    .db-portfolio-list .db-portfolio-item {
+        margin-bottom: 100px;
+    }
+
+    .db-slider-list .db-portfolio-item-info {
         width: calc(100% - 75px);
         display: table;
         margin-top: 75px;
@@ -446,7 +459,12 @@ p, label {
         left: 75px;
     }
 
-    .db-portfolio-item-thumb {
+    .db-portfolio-list {
+        list-style: none;
+    }
+
+
+    .db-slider-list .db-portfolio-item-thumb, .db-portfolio-list .db-portfolio-item-thumb {
         width: 100%;
         display: table;
         padding: 75px 0 20px 0;
@@ -454,13 +472,13 @@ p, label {
 
     }
 
-    .db-portfolio-item-thumb > button {
+    .db-slider-list .db-portfolio-item-thumb > button, .db-portfolio-list .db-portfolio-item-thumb > button {
         margin-top: 16px;
         margin-right: 75px;
         float: right;
     }
 
-    .db-portfolio-item-box {
+    .db-slider-list .db-portfolio-item-box, .db-portfolio-list .db-portfolio-item-box {
         width: 100%;
         height: 100%;
         display: block;
@@ -472,13 +490,29 @@ p, label {
         transform-origin: right;
     }
 
-    .db-portfolio-item-thumb img {
+    .db-portfolio-list .db-portfolio-item-box {
+        transform: scale(1);
+    }
+
+    .db-slider-list .db-portfolio-item-thumb img, .db-portfolio-list .db-portfolio-item-thumb img {
         width: 100%;
         max-width: 100%;
         height: auto;
         position: relative;
         left: -75px;
         transform: scale(0);
+    }
+
+    .db-portfolio-list .db-portfolio-item-thumb img {
+        transform: scale(1);
+    }
+
+
+    /* --home portfolio-- */
+
+    .db-section-offset-top {
+        margin-top: 130px;
+
     }
 
 }
