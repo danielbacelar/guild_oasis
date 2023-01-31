@@ -245,6 +245,10 @@ p, label {
         display: none;
     }
 
+    .db-block {
+        display: block;
+    }
+
     .db-contatct-info p {
         font-size: 16px;
         line-height: 24px;
@@ -558,6 +562,13 @@ p, label {
     }
 
 
+    #db-avatar-sobre img {
+        position: relative;
+        left: -15px;
+
+    }
+
+
 
 }
 
@@ -727,6 +738,10 @@ ion-icon {
     font-size: 26px;
 }
 
+.db-title-tt {
+    font-size: 48px;
+}
+
 .db-title-miid {
     font-size: 77px;
 }
@@ -817,6 +832,10 @@ ion-icon {
 
 .db-mar-top {
     margin-top: calc(26vh - 75px);
+}
+
+.db-mar-top-45 {
+    margin-top: 50px;
 }
 
 .db-mar-right-30 {
@@ -926,4 +945,41 @@ ion-icon {
 
 .green {
     background-color: green;
+}
+
+.db-box-img {
+    width: 100%;
+    display: table;
+}
+
+.db-img-responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.db-page-list {
+    list-style: none;
+    font-family: 'Open sans', sans-serif;
+
+}
+.db-page-list > li {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.db-page-list > li::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-color: #2c1c14;
 }
