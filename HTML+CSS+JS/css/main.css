@@ -101,6 +101,8 @@ p, label {
         display: table;
         background-image: url('../images/backgrund.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
         background-color: #7E3F23;
         border: 30px solid #000;
     }
@@ -568,6 +570,15 @@ p, label {
 
     }
 
+    .db-hero {
+        height: 600px;
+        background-image: url('../images/backgrund.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: block;
+    }
+
 
 
 }
@@ -731,7 +742,7 @@ ion-icon {
 }
 
 .db-title-big {
-    font-size: 78px;
+    font-size: 66px;
 }
 
 .db-title-mid {
