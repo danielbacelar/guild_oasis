@@ -795,6 +795,20 @@ ion-icon {
     font-size: 77px;
 }
 
+.db-text-center {
+    text-align: center;
+}
+
+.db-post p{
+    margin-bottom: 15px;
+}
+
+.db-post-section {
+    width: 100%;
+    display: table;
+    padding: 45px 0;
+}
+
 .db-text-brown {
     color: #7E3F23;
 }
