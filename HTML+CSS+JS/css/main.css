@@ -601,6 +601,10 @@ p, label {
         box-sizing: content-box;
         padding: 30px;
     }
+    
+    .db-pgiz {
+        z-index: 600;
+    }
 
     .db-project-stats {
         width: 100%;
