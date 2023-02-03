@@ -616,10 +616,22 @@ p, label {
     .db-post {
         width: 100%;
         display: table;
+        padding: 45px 0;
+    }
+    
+    .db-post-section {
+        width: 100%;
+        display: table;
+        padding: 45px 0;
     }
 
     .db-pre-gallery {
         padding-bottom: 350px;
+    }
+
+    .db-post-gallery .container{
+        position: relative;
+        top: -70px;
     }
 
 
