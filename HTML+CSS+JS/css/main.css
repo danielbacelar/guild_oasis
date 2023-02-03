@@ -613,6 +613,14 @@ p, label {
         border-right: 2px solid #000;
     }
 
+    .db-post {
+        width: 100%;
+        display: table;
+    }
+
+    .db-pre-gallery {
+        padding-bottom: 350px;
+    }
 
 
 }
