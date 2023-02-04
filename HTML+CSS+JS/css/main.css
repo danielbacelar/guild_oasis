@@ -216,6 +216,10 @@ p, label {
         display: none;
     }
 
+    .db-menu-mob {
+        display: block;
+    }
+
     .db-btn-contact {
         width: 45px;
         height: 45px;
@@ -719,6 +723,10 @@ p, label {
         height: 10px;
         margin-left: 200px;
 
+    }
+
+    .db-menu-mob {
+        display: none;
     }
 
     .db-menu a {
