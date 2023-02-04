@@ -655,6 +655,13 @@ p, label {
         display: block;
         position: relative;
     }
+    
+    .db-gallery-frame-container .db-itens-next-prev {
+        width: 200px;
+        margin: 90px;
+
+
+    }
 
     .db-close-gallery {
         width: 45px;
