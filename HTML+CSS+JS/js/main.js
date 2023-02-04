@@ -34,6 +34,10 @@ for(var i = 0; i < toggleModal.length; i++) {
 
 }
 
+var postGalleryHeight = document.querySelector('.db-post-gallery');
+var postGalleryHeight = postGallery.clientHeight;
+postGalleryHeight.style.height = (postGalleryHeight - 270) + 'px';
+
 // Animando elemantos on Scroll com waypoints
 var myScrolldown = document.querySelector('.db-scroll-down');
 var waypoint = new Waypoint({

@@ -19,7 +19,17 @@
         </div>
     </div>
 
-    <div class="db-overlay db-toggle-modal"></div>
+    <div class="db-overlay db-toggle-gallery"></div>
+
+    <div class="db-gallery-frame-container">
+        <div class="db-gallery-frame-inner">
+            <button class="db-toggle-gallery db-close-gallery">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <img src="" class="db-gallery-frame" />
+            <img src="" class="db-gallery-frame-image" />
+        </div>
+    </div>
 
     <header class="db-topbar">
         <div class="db-logo">
@@ -123,44 +133,44 @@
                 </div>
             </section>
 
-            <section class="db-post-section db-post-gallery">
+            <section class="db-post-section db-post-gallery " style="background-color: #000">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-01.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-01.jpg" src="img/cl-01.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-02.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-02.jpg" src="img/cl-02.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-03.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-03.jpg" src="img/cl-03.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-04.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-04.jpg" src="img/cl-04.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-04.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-04.jpg" src="img/cl-04.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-03.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-03.jpg" src="img/cl-03.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-02.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-02.jpg" src="img/cl-02.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-01.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-01.jpg" src="img/cl-01.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-01.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-01.jpg" src="img/cl-01.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-02.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-02.jpg" src="img/cl-02.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-03.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-03.jpg" src="img/cl-03.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
                         <div class="col-sm-3 db-mar-bottom-15">
-                            <img src="img/cl-04.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive" />
+                            <img data-src="img/cl-04.jpg" src="img/cl-04.jpg" alt="Imagens app" title="Imagens app" class="db-img-responsive db-thumb-img" />
                         </div>
 
                     </div>
@@ -176,12 +186,28 @@
     <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    <script src="../../js/gallery.js"></script>
     <script src="../../js/slider.js"></script>
     <script src="../../js/main.js"></script>
     
     <script>
         AOS.init();
         var rellax = new Rellax('.rellax');
+
+
+        var galleryItem = document.querySelectorAll('.db-post-gallery img')
+       for (var i = 0; i < galleryItem.length; i++) {
+           new Waypoint.Inview({
+              element: galleryItem[i],
+              entered: function() {
+                   var fullImage = this.element.getAttribute('data-src');
+                   this.element.setAttribute('src', fullImage);
+
+                }
+            })
+        }
     </script>
     
     </body>
