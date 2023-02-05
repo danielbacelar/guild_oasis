@@ -758,6 +758,14 @@ p, label {
     .db-title-xlarge {
         font-size: 90px;
     }
+
+    .db-title-miid {
+        font-size: 36px;
+    }
+
+    .db-title-mid {
+        font-size: 12px;
+    }
 }
 
 
@@ -822,6 +830,14 @@ p, label {
 
     .db-title-xlarge {
         font-size: 300px;
+    }
+
+    .db-title-miid {
+        font-size: 77px;
+    }
+
+    .db-title-mid {
+        font-size: 26px;
     }
 
 
@@ -928,9 +944,7 @@ ion-icon {
     font-size: 66px;
 }
 
-.db-title-mid {
-    font-size: 26px;
-}
+
 
 .db-title-tt {
     font-size: 48px;
@@ -940,9 +954,7 @@ ion-icon {
     font-size: 32px;
 }
 
-.db-title-miid {
-    font-size: 77px;
-}
+
 
 .db-text-center {
     text-align: center;
