@@ -520,12 +520,12 @@ p, label {
     }
 
     .db-slider-list .db-portfolio-item-info {
-        width: calc(100% - 75px);
+        width: 100%;
         display: table;
         margin-top: 75px;
         position: relative;
         opacity: 0;
-        left: 75px;
+
     }
 
     .db-portfolio-list .db-portfolio-item-info {
@@ -779,6 +779,15 @@ p, label {
 
     .db-title-big {
         font-size: 26px;
+        text-align: center;
+    }
+
+    .db-title-b {
+        text-align: center;
+    }
+
+    .db-slider-list .db-portfolio-item-info button {
+        margin: 0 auto;
     }
 
 
@@ -856,6 +865,7 @@ p, label {
 
     .db-slider-list .db-portfolio-item-thumb {
         padding: 25px 0 20px 0;
+        margin-top: 45px;
     }
 
     .db-slider-list .db-portfolio-item-thumb img {
@@ -890,6 +900,7 @@ p, label {
 
     .db-title-big {
         font-size: 40px;
+        text-align: left;
     }
     
     .db-slider-list .db-portfolio-item-thumb > button {
@@ -904,6 +915,18 @@ p, label {
         width: 30px;
     }
 
+    .db-title-b {
+        text-align: left;
+    }
+
+    .db-slider-list .db-portfolio-item-info {
+        width: calc(100% - 75px);
+        left: 75px;
+    }
+
+    .db-slider-list .db-portfolio-item-info button {
+        margin: 0;
+    }
 
 }
 
@@ -911,6 +934,7 @@ p, label {
 
     .db-slider-list .db-portfolio-item-thumb {
         padding: 75px 0 20px 0;
+        margin-top: 0;
     }
 
     .db-slider-list .db-portfolio-item-thumb img {
