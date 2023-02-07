@@ -545,7 +545,12 @@ p, label {
 
     }
 
-    .db-slider-list .db-portfolio-item-thumb > button, .db-portfolio-list .db-portfolio-item-thumb > button {
+    .db-slider-list .db-portfolio-item-thumb > button {
+        margin: 15px auto 0 auto;
+        float: none;
+    }
+
+    .db-portfolio-list .db-portfolio-item-thumb > button {
         margin-top: 16px;
         margin-right: 75px;
         float: right;
@@ -574,11 +579,11 @@ p, label {
     }
 
     .db-slider-list .db-portfolio-item-thumb img {
-        width: 100%;
+        width: 90%;
         max-width: 100%;
         height: auto;
         position: relative;
-        left: -75px;
+        left: 5%;
         transform: scale(0);
     }
 
@@ -904,7 +909,8 @@ p, label {
     }
     
     .db-slider-list .db-portfolio-item-thumb > button {
-        margin-right: 15px;
+        margin: 15px 4% 0 0;
+        float: right;
     }
 
     .db-navigator-counter span{
