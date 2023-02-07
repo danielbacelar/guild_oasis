@@ -399,12 +399,13 @@ p, label {
 
 
     .db-portifolio-navigator {
-        width: 150px;
-        height: 400px;
+        width: 160px;
+        height: auto;
         display: table;
         position: absolute;
         left: 90px;
-        top: 28vh;
+        bottom: 15px;
+        z-index: 110;
     }
 
     .db-navigator-counter {
@@ -498,6 +499,7 @@ p, label {
 
         display: block;
         overflow: hidden;
+        padding-bottom: 120px;
     }
 
     .db-slider-list {
@@ -510,9 +512,9 @@ p, label {
 
     .db-slider-list .db-slider-item {
         display: block;
+        height: auto;
         float: left;
-        height: 500px;
-        margin-top: calc(26vh - 75px);
+        margin-top: 0;
     }
 
     .db-portfolio-list .db-portfolio-item {
@@ -522,7 +524,7 @@ p, label {
     .db-slider-list .db-portfolio-item-info {
         width: 100%;
         display: table;
-        margin-top: 75px;
+        margin-top: 20px;
         position: relative;
         opacity: 0;
 
@@ -537,7 +539,15 @@ p, label {
     }
 
 
-    .db-slider-list .db-portfolio-item-thumb, .db-portfolio-list .db-portfolio-item-thumb {
+    .db-slider-list .db-portfolio-item-thumb {
+        width: 100%;
+        display: table;
+        padding: 15px 0 20px 0;
+        position: relative;
+
+    }
+
+    .db-portfolio-list .db-portfolio-item-thumb {
         width: 100%;
         display: table;
         padding: 75px 0 20px 0;
@@ -795,6 +805,11 @@ p, label {
         margin: 0 auto;
     }
 
+    .db-full-height {
+        height: auto;
+        position: relative;
+    }
+
 
 }
 
@@ -928,10 +943,45 @@ p, label {
     .db-slider-list .db-portfolio-item-info {
         width: calc(100% - 75px);
         left: 75px;
+        margin-top: 75px;
+    }
+
+    .db-slider-list .db-portfolio-item-thumb {
+        width: 100%;
+        display: table;
+        margin-top: 45px;
+        position: relative;
+
     }
 
     .db-slider-list .db-portfolio-item-info button {
         margin: 0;
+    }
+
+    .db-slider-list .db-slider-item {
+        display: block;
+        float: left;
+        height: 500px;
+        margin-top: calc(26vh - 75px);
+    }
+
+    .db-full-height {
+        height: 100vh;
+        position: relative;
+    }
+
+    .db-portifolio-navigator {
+        width: 150px;
+        height: 400px;
+        left: 90px;
+        top: 28vh;
+    }
+
+    .db-slider-container {
+
+        display: block;
+        overflow: hidden;
+        padding-bottom: 0;
     }
 
 }
@@ -1208,10 +1258,7 @@ ion-icon {
     padding-left: 30px;
 }
 
-.db-full-height {
-    height: 100vh;
-    position: relative;
-}
+
 
 .db-fisrst-section {
     height: calc(100vh - 30px);
