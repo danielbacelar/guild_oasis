@@ -6,6 +6,10 @@ var closeGallery = document.querySelectorAll('.db-toggle-gallery');
 var currCounter = document.querySelector('.db-current-slide');
 var totalCounter = document.querySelector('.db-total-slide');
 
+var postGalleryHeight = document.querySelector('.db-post-gallery');
+var postGalleryHeight = postGallery.clientHeight;
+postGalleryHeight.style.height = (postGalleryHeight - 270) + 'px';
+
 var counterFormatter = function (n) {
     if (n < 10) {
         return '0' + n;

@@ -46,6 +46,16 @@ btnContact.addEventListener('click', function () {
     this.classList.toggle('db-change-icon');
 });
 
+// Animando elemantos on Scroll com waypoints
+var myScrolldown = document.querySelector('.db-scroll-down');
+var waypoint = new Waypoint({
+    element: myScrolldown,
+    handler: function() {
+      myScrolldown.classList.toggle('db-fade-out');
+    },
+    offset: '75%'
+});
+
 // Abrindo e fechando o modal orçamento
 
 for(var i = 0; i < toggleModal.length; i++) {
@@ -60,17 +70,9 @@ for(var i = 0; i < toggleModal.length; i++) {
 
 }
 
-var postGalleryHeight = document.querySelector('.db-post-gallery');
-var postGalleryHeight = postGallery.clientHeight;
-postGalleryHeight.style.height = (postGalleryHeight - 270) + 'px';
 
-// Animando elemantos on Scroll com waypoints
-var myScrolldown = document.querySelector('.db-scroll-down');
-var waypoint = new Waypoint({
-    element: myScrolldown,
-    handler: function() {
-      myScrolldown.classList.toggle('db-fade-out');
-    },
-    offset: '75%'
-});
+
+
+
+
 

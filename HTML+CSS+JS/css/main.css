@@ -149,11 +149,11 @@ p, label {
     }
 
     .db-modal {
-        width: 800px;
+        width: 90%;
         display: none;
         padding: 30px;
         border-radius: 0 30px 30px 30px;
-        position: fixed;
+        position: absolute;
         top: -130%;
         left: 0;
         right: 0;
@@ -184,8 +184,8 @@ p, label {
     }
 
     .db-form label {
-        margin-bottom: 10px;
-        font-size: 16px;
+        margin-bottom: 7px;
+        font-size: 14px;
         display: inline-block;
     }
 
@@ -1011,6 +1011,9 @@ p, label {
         width: 35px;
     }
 
+    .db-modal {
+        width: 800px;
+    }
 }
 
 @media screen and (min-width: 1364px){
