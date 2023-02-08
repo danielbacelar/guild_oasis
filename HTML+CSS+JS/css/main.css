@@ -518,7 +518,7 @@ p, label {
     }
 
     .db-portfolio-list .db-portfolio-item {
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
 
     .db-slider-list .db-portfolio-item-info {
@@ -991,6 +991,10 @@ p, label {
         padding-bottom: 0;
     }
 
+    .db-portfolio-list .db-portfolio-item {
+        margin-bottom: 100px;
+    }
+
     .db-portfolio-list .db-portfolio-item:nth-child(odd) .db-portfolio-item-info{
         text-align: right; 
         margin-top: 65px; 
@@ -1014,6 +1018,18 @@ p, label {
 
     .db-portfolio-list .db-portfolio-item:nth-child(even) .db-portfolio-item-info h1, .db-portfolio-list .db-portfolio-item:nth-child(even) .db-portfolio-item-info p{
         text-align: left;
+    }
+
+    .db-portfolio-list .db-portfolio-item-thumb {
+
+        padding: 75px 0 20px 0;
+
+    }
+
+    .db-portfolio-list .db-portfolio-item-thumb img {
+        width: calc(100% + 45px);
+        max-width: calc(100% +45px);
+
     }
 
     .db-portfolio-list .db-portfolio-item:nth-child(even) .db-portfolio-item-thumb button{
