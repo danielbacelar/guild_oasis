@@ -648,6 +648,13 @@ p, label {
         display: block;
     }
 
+    .db-titulo-sobre, .db-info-sobre, .db-premios-sobre {
+        width: 100%;
+        display: table;
+        float: left;
+        margin-bottom: 30px;
+    }
+
 
     #db-avatar-sobre img {
         position: relative;
@@ -1057,6 +1064,21 @@ p, label {
         left: -75px;
     }
 
+    .db-titulo-sobre {
+        width: 100%;
+        
+
+    }
+
+    .db-info-sobre {
+        width: 55%;
+    }
+
+    .db-premios-sobre  {
+        width: 45%;
+        padding-left: 30px;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -1086,6 +1108,14 @@ p, label {
 
     .db-modal {
         width: 800px;
+    }
+
+    .db-info-sobre {
+        width: 43%;
+    }
+
+    .db-premios-sobre  {
+        width: 31%;
     }
 }
 
