@@ -93,6 +93,15 @@ p, label {
 
 }
 
+.db-trigger-topbar {
+    width: 1px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+
 @media screen and (min-width: 320px){
 
     .db-page-wrapper, .db-preloader {
@@ -135,6 +144,10 @@ p, label {
     .db-topbar {
         position: fixed;
         z-index: 900;
+    }
+
+    .db-topbar-bg {
+        background-color: #00000088;
     }
 
     .db-overlay, .db-menu-overlay {

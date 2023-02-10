@@ -70,6 +70,17 @@ for(var i = 0; i < toggleModal.length; i++) {
 
 }
 
+// Animando elemantos on Scroll com waypoints
+var triggerTopbar = document.querySelector('.db-trigger-topbar');
+var topbar = document.querySelector('.db-topbar');
+var waypoint = new Waypoint({
+    element: triggerTopbar,
+    handler: function() {
+      topbar.classList.toggle('db-topbar-gb');
+    },
+    offset: '50px'
+});
+
 
 
 
