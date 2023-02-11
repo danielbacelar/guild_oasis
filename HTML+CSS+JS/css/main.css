@@ -830,7 +830,7 @@ p, label {
         text-align: center;
     }
 
-    .db-slider-list .db-portfolio-item-info button {
+    .db-slider-list .db-portfolio-item-info .db-btn {
         margin: 0 auto;
     }
 
@@ -957,7 +957,7 @@ p, label {
         text-align: center;
     }
     
-    .db-slider-list .db-portfolio-item-thumb > button {
+    .db-slider-list .db-portfolio-item-thumb > .db-btn {
         margin: 15px 4% 0 0;
         float: right;
     }
@@ -988,7 +988,7 @@ p, label {
 
     }
 
-    .db-slider-list .db-portfolio-item-info button {
+    .db-slider-list .db-portfolio-item-info .db-btn {
         margin: 0;
     }
 
@@ -1027,7 +1027,7 @@ p, label {
         margin-top: 65px; 
     }
 
-    .db-portfolio-list .db-portfolio-item:nth-child(odd) .db-portfolio-item-info button{
+    .db-portfolio-list .db-portfolio-item:nth-child(odd) .db-portfolio-item-info .db-btn{
         float: right;
     }
 
@@ -1035,7 +1035,7 @@ p, label {
         text-align: right;
     }
 
-    .db-portfolio-list .db-portfolio-item:nth-child(even) .db-portfolio-item-info button{
+    .db-portfolio-list .db-portfolio-item:nth-child(even) .db-portfolio-item-info .db-btn{
         float: left;
     }
 
@@ -1059,12 +1059,12 @@ p, label {
 
     }
 
-    .db-portfolio-list .db-portfolio-item:nth-child(even) .db-portfolio-item-thumb button{
+    .db-portfolio-list .db-portfolio-item:nth-child(even) .db-portfolio-item-thumb .db-btn{
         float: left;
         margin-left: 75px;
     }
 
-    .db-portfolio-list .db-portfolio-item:nth-child(odd) .db-portfolio-item-thumb button{
+    .db-portfolio-list .db-portfolio-item:nth-child(odd) .db-portfolio-item-thumb .db-btn{
         float: right;
         margin-right: 75px;
     }
@@ -1107,7 +1107,7 @@ p, label {
         left: -75px;
     }
 
-    .db-slider-list .db-portfolio-item-thumb > button {
+    .db-slider-list .db-portfolio-item-thumb > .db-btn {
         margin-right: 75px;
     }
 
@@ -1488,3 +1488,6 @@ ion-icon {
     background-color: #2c1c14;
 }
 
+.db-btn {
+    text-decoration: none;
+}
